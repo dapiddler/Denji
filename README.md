@@ -1,6 +1,6 @@
 # Denji
 https://www.piddlerintheroot.com/project-denji/
-#### The name Denji - Origin: Japan. Meaning: One who has electromagnetic powers
+#### Origin: Japan. Meaning: One who has electromagnetic powers
 
 ## Synopsis
 
