@@ -1,4 +1,5 @@
 # Denji
+https://www.piddlerintheroot.com/project-denji/
 #### The name Denji - Origin: Japan. Meaning: One who has electromagnetic powers
 
 ## Synopsis
@@ -46,8 +47,8 @@ https://github.com/FRC4564/Maestro
 
 Keyboard controls:
 * W - Take a Step
-* S - Crouch
-* N - Neutral Standing Position
+* C - Crouch
+* S - Neutral Standing Position
 * T - Taunt
 
 
