@@ -1,0 +1,174 @@
+<!--Pololu Maestro servo controller settings file, http://www.pololu.com/catalog/product/1350-->
+<UscSettings version="1">
+  <NeverSuspend>false</NeverSuspend>
+  <SerialMode>UART_FIXED_BAUD_RATE</SerialMode>
+  <FixedBaudRate>9600</FixedBaudRate>
+  <SerialTimeout>0</SerialTimeout>
+  <EnableCrc>false</EnableCrc>
+  <SerialDeviceNumber>12</SerialDeviceNumber>
+  <SerialMiniSscOffset>0</SerialMiniSscOffset>
+  <Channels MiniMaestroServoPeriod="80000" ServoMultiplier="1">
+    <!--Period = 20 ms-->
+    <!--Channel 0-->
+    <Channel name="" mode="Servo" min="3968" max="8000" homemode="Off" home="3968" speed="0" acceleration="0" neutral="6000" range="1905" />
+    <!--Channel 1-->
+    <Channel name="" mode="Servo" min="3968" max="8000" homemode="Off" home="3968" speed="0" acceleration="0" neutral="6000" range="1905" />
+    <!--Channel 2-->
+    <Channel name="" mode="Servo" min="3968" max="8000" homemode="Off" home="3968" speed="0" acceleration="0" neutral="6000" range="1905" />
+    <!--Channel 3-->
+    <Channel name="" mode="Servo" min="3968" max="8000" homemode="Off" home="3968" speed="0" acceleration="0" neutral="6000" range="1905" />
+    <!--Channel 4-->
+    <Channel name="" mode="Servo" min="3968" max="8000" homemode="Off" home="3968" speed="0" acceleration="0" neutral="6000" range="1905" />
+    <!--Channel 5-->
+    <Channel name="" mode="Servo" min="3968" max="8000" homemode="Off" home="3968" speed="0" acceleration="0" neutral="6000" range="1905" />
+    <!--Channel 6-->
+    <Channel name="" mode="Servo" min="3968" max="8000" homemode="Off" home="3968" speed="0" acceleration="0" neutral="6000" range="1905" />
+    <!--Channel 7-->
+    <Channel name="" mode="Servo" min="3968" max="8000" homemode="Off" home="3968" speed="0" acceleration="0" neutral="6000" range="1905" />
+    <!--Channel 8-->
+    <Channel name="" mode="Servo" min="3968" max="8000" homemode="Off" home="3968" speed="0" acceleration="0" neutral="6000" range="1905" />
+    <!--Channel 9-->
+    <Channel name="" mode="Servo" min="3968" max="8000" homemode="Off" home="3968" speed="0" acceleration="0" neutral="6000" range="1905" />
+    <!--Channel 10-->
+    <Channel name="" mode="Servo" min="3968" max="8000" homemode="Off" home="3968" speed="0" acceleration="0" neutral="6000" range="1905" />
+    <!--Channel 11-->
+    <Channel name="" mode="Servo" min="3968" max="8000" homemode="Off" home="3968" speed="0" acceleration="0" neutral="6000" range="1905" />
+    <!--Channel 12-->
+    <Channel name="" mode="Servo" min="3968" max="8000" homemode="Off" home="3968" speed="0" acceleration="0" neutral="6000" range="1905" />
+    <!--Channel 13-->
+    <Channel name="" mode="Servo" min="3968" max="8000" homemode="Off" home="3968" speed="0" acceleration="0" neutral="6000" range="1905" />
+    <!--Channel 14-->
+    <Channel name="" mode="Servo" min="3968" max="8000" homemode="Off" home="3968" speed="0" acceleration="0" neutral="6000" range="1905" />
+    <!--Channel 15-->
+    <Channel name="" mode="Servo" min="3968" max="8000" homemode="Off" home="3968" speed="0" acceleration="0" neutral="6000" range="1905" />
+    <!--Channel 16-->
+    <Channel name="" mode="Servo" min="3968" max="8000" homemode="Off" home="3968" speed="0" acceleration="0" neutral="6000" range="1905" />
+    <!--Channel 17-->
+    <Channel name="" mode="Servo" min="3968" max="8000" homemode="Off" home="3968" speed="0" acceleration="0" neutral="6000" range="1905" />
+  </Channels>
+  <Sequences>
+    <Sequence name="crouch">
+      <Frame name="Frame 0" duration="1000">6000 4887 8000 7236 6000 6023 6688 4985 4868 6000 6000 3968 6000 6000 8000 0 0 0</Frame>
+      <Frame name="Frame 1" duration="1000">6000 4887 8000 7236 6000 6023 6688 4985 4868 6000 8000 3968 6000 3968 8000 0 0 0</Frame>
+    </Sequence>
+    <Sequence name="neutral">
+      <Frame name="Frame 1" duration="500">6000 6000 6000 6903 6000 6000 6000 6000 5377 6000 6000 6000 6000 6000 6179 6000 6000 6000</Frame>
+    </Sequence>
+    <Sequence name="step">
+      <Frame name="Frame 1" duration="1000">6000 5964 3968 3968 6101 6000 6532 6000 6000 6000 6000 6000 6000 6000 6000 5944 6000 6000</Frame>
+      <Frame name="Frame 2" duration="1000">6669 5964 3968 3968 6101 6316 6532 6000 6000 6000 6000 6000 6000 6000 6000 5944 6000 6000</Frame>
+      <Frame name="Frame 3" duration="1000">6238 5964 3968 3968 6101 6316 6532 6395 7804 6000 6000 6000 6000 6000 6000 5944 6000 6000</Frame>
+      <Frame name="Frame 4" duration="1000">6238 7119 3968 4809 6101 6316 6532 6395 7804 6000 6000 6000 6000 6000 6000 5944 6000 6000</Frame>
+      <Frame name="Frame 5" duration="1000">6003 7119 3968 5181 6101 6316 6532 6395 6923 5846 6000 6000 6000 6000 6000 5944 6000 6000</Frame>
+    </Sequence>
+    <Sequence name="taunt">
+      <Frame name="Frame 0" duration="500">6000 6000 6000 6903 6000 6000 6000 6000 5377 6000 6000 6000 3968 6000 6179 6000 4966 6000</Frame>
+      <Frame name="Frame 1" duration="500">6000 6000 6000 6903 6000 6000 6000 6000 5377 6000 6000 6000 6000 6000 6179 8000 6982 6000</Frame>
+      <Frame name="Frame 2" duration="500">6000 6000 6000 6903 6000 6000 6000 6000 5377 6000 6000 6000 6000 6000 6179 6000 6000 6000</Frame>
+    </Sequence>
+  </Sequences>
+  <Script ScriptDone="true">
+### Sequence subroutines: ###
+
+# crouch
+sub crouch
+  1000 6000 4887 8000 7236 6000 6023 
+  6688 4985 4868 6000 6000 3968 
+  6000 6000 8000 0 0 0 frame_0..17 # Frame 0
+  1000 8000 3968 frame_10_13 # Frame 1
+  return
+# neutral
+sub neutral
+  500 6000 6000 6000 6903 6000 6000 
+  6000 6000 5377 6000 6000 6000 
+  6000 6000 6179 6000 6000 6000 frame_0..17 # Frame 1
+  return
+# step
+sub step
+  1000 6000 5964 3968 3968 6101 6000 
+  6532 6000 6000 6000 6000 6000 
+  6000 6000 6000 5944 6000 6000 frame_0..17 # Frame 1
+  1000 6669 6316 frame_0_5 # Frame 2
+  1000 6238 6395 7804 frame_0_7_8 # Frame 3
+  1000 7119 4809 frame_1_3 # Frame 4
+  1000 6003 5181 6923 5846 frame_0_3_8_9 # Frame 5
+  return
+# taunt
+sub taunt
+  500 6000 6000 6000 6903 6000 6000 
+  6000 6000 5377 6000 6000 6000 
+  3968 6000 6000 6000 4966 6000 frame_0..17 # Frame 0
+  500 6000 6179 8000 6982 frame_12_14..16 # Frame 1
+  500 6000 6000 frame_15_16 # Frame 2
+  return
+
+sub frame_0..17
+  17 servo
+  16 servo
+  15 servo
+  14 servo
+  13 servo
+  12 servo
+  11 servo
+  10 servo
+  9 servo
+  8 servo
+  7 servo
+  6 servo
+  5 servo
+  4 servo
+  3 servo
+  2 servo
+  1 servo
+  0 servo
+  delay
+  return
+
+sub frame_10_13
+  13 servo
+  10 servo
+  delay
+  return
+
+sub frame_0_5
+  5 servo
+  0 servo
+  delay
+  return
+
+sub frame_0_7_8
+  8 servo
+  7 servo
+  0 servo
+  delay
+  return
+
+sub frame_1_3
+  3 servo
+  1 servo
+  delay
+  return
+
+sub frame_0_3_8_9
+  9 servo
+  8 servo
+  3 servo
+  0 servo
+  delay
+  return
+
+sub frame_12_14..16
+  16 servo
+  15 servo
+  14 servo
+  12 servo
+  delay
+  return
+
+sub frame_15_16
+  16 servo
+  15 servo
+  delay
+  return
+</Script>
+</UscSettings>
