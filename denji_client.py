@@ -4,14 +4,10 @@ import time
 import requests
 import curses
 import curses.textpad
-from network import hostname_to_IP
+from network import scan
 
-denji_ip = hostname_to_IP('backpack_pi') #scan network for denji IP
-
-#validate IP
-if denji_ip == 0:
-    print('Denji could not be found on WIFI network')
-    sys.exit()
+denji_ip = scan('backpack_pi') #scan network for denji IP
+print('denji found on:', denji_ip)
 
 
 def step_forward(denji_ip):
