@@ -1,7 +1,6 @@
 import re
 import os
 import socket
-import subprocess
 
 def get_ip():
     '''retrieve local ip'''
@@ -16,8 +15,17 @@ def get_ip():
         s.close()
     return IP
 
-def scan(device):
-    result = subprocess.run(['nmap', device], stdout=subprocess.PIPE)
-    out = result.stdout.decode('utf-8')
-    address = re.search(r'' + device + ' \((.*?)\)', out).group(1)
-    return address
+def hostname_to_IP(device):
+    '''issue arp -a and return ip address of specified hostname'''
+    scan = None
+    f = os.popen('arp -a')
+    for line in f.readlines():
+        if device in line:
+            scan = line
+            break
+    denji_ip = re.search('\(([^)]+)', scan).group(1)
+    is_valid = re.match("^(([0-9]|[1-9][0-9]|1[0-9]{2}|2[0-4][0-9]|25[0-5])\.){3}([0-9]|[1-9][0-9]|1[0-9]{2}|2[0-4][0-9]|25[0-5])$", denji_ip)
+    if is_valid:
+        return denji_ip
+    else:
+        return 0
