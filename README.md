@@ -36,7 +36,12 @@ Create a biped robot platform that utilizes the python programming language that
 pip install requirements.txt
 ```
 
-4. Edit denji_client.py with RPI hostname
+4. Edit denji_client.py with RPI hostname and install nmap
+
+```
+sudo apt get install nmap
+
+```
 
 5. Run denji_server.py on RPI and denji.client.py on remote computer (LAN)
 
